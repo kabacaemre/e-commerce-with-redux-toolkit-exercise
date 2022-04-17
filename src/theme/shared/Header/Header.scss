@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  display: flex;
+  padding: 5px 0;
+  margin-bottom: 30px;
+  background-color: #2A59FE;
+}
+
+.logo {
+  width: 250px;
+  height: 20px;
+  display: inline-flex;
+}
+
+.basketPrice, .user {
+  color: #fff;
+  font-size: 16px;
+  align-items: center;
+  display: inline-flex;
+  span {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: auto;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 12px 0;
+  }
+  .logo {
+    width: auto;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,40 @@
+// https://www.npmjs.com/package/eslint-config-airbnb
+// https://github.com/yannickcr/eslint-plugin-react#recommended
+
+{
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "plugins": ["react", "prettier", "import", "jsx-a11y"],
+  "rules": {
+    "no-console": "off", // console.log kullanımını kısıtladığı için kapatılmıştır
+    "no-plusplus": "off", // for döngülerinde ++ kullanımı kısıtladığı için geçici süreliğine kapatılmıştır
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "prettier/prettier": [
+      "error", 
+      { 
+        "semi": true,
+        "tabWidth": 2,
+        "printWidth": 120,
+        "singleQuote": true,
+        "trailingComma": "all" 
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

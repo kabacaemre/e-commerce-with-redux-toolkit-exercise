@@ -1,0 +1,108 @@
+@import "./reset.css";
+
+body {
+  font-size: 14px;
+  background: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+ul {
+  padding: 0 0;
+  list-style: none;
+}
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bgTransparent {
+  background-color: transparent;
+}
+
+.content {
+  padding: 0 15px;
+  position: relative;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 calc(100% - 243px);
+  -webkit-box-flex: 0;
+  flex: 0 0 calc(100% - 243px);
+  max-width: calc(100% - 243px);
+}
+
+.sidebar {
+  padding: 0 15px;
+  position: relative;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 243px;
+  -webkit-box-flex: 0;
+  flex: 0 0 243px;
+  max-width: 243px;
+}
+
+.display_768 {
+  display: none !important;
+}
+
+.scrollBar::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.scrollBar::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.scrollBar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #C4C4C4;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+
+@media screen and (max-width: 1330px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .wrapper.p0 {
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content, .sidebar {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .display_768 {
+    display: block !important;
+  }
+  .hidden_768 {
+    display: none !important;
+  }
+}
+
+

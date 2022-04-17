@@ -1,0 +1,22 @@
+.formElement {
+    width: 100%;
+    display: block;
+}
+.filterBox {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 205px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    .p-field-radiobutton, .p-field-checkbox {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        label {
+            cursor: pointer;
+            padding-left: 10px;
+        }
+    }
+}
+

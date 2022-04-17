@@ -1,0 +1,75 @@
+ul.basketList {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  li {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    .leftBox {
+      font-size: 12px;
+      padding-right: 7px;
+      -ms-flex: 0 0 calc(100% - 84px);
+      -webkit-box-flex: 0;
+      flex: 0 0 calc(100% - 84px);
+      max-width: calc(100% - 84px);
+      .title {
+        display: block;
+        color: #000;
+        overflow: hidden;
+        margin-bottom: 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .price {
+        color: #2A59FE;
+        margin-bottom: 0;
+      }
+    }
+    .rightBox {
+      -ms-flex: 0 0 84px;
+      -webkit-box-flex: 0;
+      flex: 0 0 84px;
+      max-width: 84px;
+      span {
+        width: 28px;
+        height: 28px;
+        color: #fff;
+        font-size: 18px;
+        background-color: #2A59FE;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+      }
+      .minus, .plus {
+        width: 28px;
+        height: 28px;
+        padding: 0 0;
+        cursor: pointer;
+        border-radius: 4px 0 0 4px;
+        background-color: #ededed;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        outline: 0;
+        border: 0;
+        &:disabled {
+          opacity: 0.7;
+          cursor: no-drop;
+        }
+      }
+      .plus {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}
+
+.basketEmptyText {
+  width: 100%;
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
